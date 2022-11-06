@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="shortcut icon" href="img/favIcon.svg" type="image/x-icon">
+    <!-- Box Icon  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <main>
+        <header id="head">
+            <img src="img/logo.svg" alt="" width="150px">
+            <i class='bx bx-x' id="removenav"></i>
+            <nav class="">
+                <div class="nav-contents nav1 navActive">
+                    <div>
+                        <img src="img/icons/dashboard.png" alt="" width="25px">
+                    </div>
+                    <p class="nav-text">Dashboard</p>
+                </div>
+                <div class="nav-contents nav2">
+                    <div>
+                        <img src="img/icons/chat.png" alt="" width="25px">
+                    </div>
+                    <p class="nav-text">Managers</p>
+                </div>
+                <div class="nav-contents nav3">
+                    <div>
+                        <img src="img/icons/staff.png" alt="" width="25px">
+                    </div>
+                    <p class="nav-text">Staffs</p>
+                </div>
+                <!-- <div class="nav-contents">
+                    <div>
+                        <img src="img/icons/chat2.png" alt="" width="25px">
+                    </div>
+                    <p class="nav-text">Chat</p>
+                </div> -->
+            </nav>
+            <!-- <div class="nav-box">
+                <p></p>
+            </div> -->
+            <div href="" id="backToLogin">
+                <i class='bx bx-log-out-circle' ></i>
+                <p class="nav-text">Login Out</p>
+            </div>
+        </header>
+        <section id="dashboard">
+                <nav class="dashboard-nav">
+                    <div class="hamsearch">
+                        <i class='bx bx-menu' id="togNavIcons"></i>
+                        <img src="img/icons/search.png" alt="" id="ressearch" width="20px">
+                    </div>
+                    <div class="search">
+                        <img src="img/icons/search.png" class="searchinputicon" alt="" width="20px">
+                       <!-- <p class="search-title">Search</p> -->
+                       <input type="search" id="search-input" placeholder="Search">
+                    </div>
+                    <div class="notprof">
+                        <div class="dashboard-nav-div-wrapper">
+                            <div class="dashboard-nav-div">
+                                <img src="img/icons/notification.png" alt="">
+                            </div>
+                            <div class="dashboard-nav-div">
+                                <img src="img/icons/chat.png" alt="" width="20px">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="loggedInAs">
+                                <div class="loggedInAs-img">
+                                    <img src="img/Ardova-Plc-removebg-preview.png" alt="" width="50px">
+                                </div>
+                                <div class="loggedInAstext">
+                                    <h1 class="loggedincompanyname">Ardova Plc</h1>
+                                    <p>Admin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </nav>
+            <section id="dashboard-content">
+                <section class="dashboard-content">
+                    <section class="admin dashboardActive">
+                        <div class="admin-flex">
+                            <div class="progress">
+                                <div class="performance">
+                                    <div class="performance-text">
+                                        <h1>Performance</h1>
+                                        <button class="butdot"><i class='bx bx-dots-vertical-rounded'></i> </button>                         
+                                    </div>
+                                    <div class="performance-percent">
+                                        <div class="perfincome">
+                                            <h1>80%</h1>
+                                            <p>Income</p>
+                                        </div>
+                                        <hr>
+                                        <div class="perfincome">
+                                            <h1>20%</h1>
+                                            <p>Spendings</p>
+                                        </div>
+                                    </div>
+                                    <div class="spdecash-wrapper">
+                                        <div class="spdecash">
+                                            <img src="img/tickone.png" alt="" width="35px">
+                                            <p>Spending course <span>was taken</span></p>
+                                        </div>
+                                        <div class="spdecash">
+                                            <img src="img/ticktwo.png" alt="" width="35px">
+                                            <p>Deposit programs <span>was setup</span></p>
+                                        </div>
+                                        <div class="spdecash">
+                                            <img src="img/tickthree.png" alt="" width="35px">
+                                            <p>Cashback program <span>activated</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="graph">
+                                <div class="graph-img">
+                                   <div class="graph-content">
+                                    <div class="graph-text">
+                                        <div class="activity">
+                                          <h1>Activity</h1>
+                                          <hr>
+                                        </div>
+                                          <h1>Clicks</h1>
+                                          <h1>Sales</h1>
+                                      </div>
+                                      <div>
+                                        <button class="week">Week <i class='bx bx-chevron-down'></i></button>
+                                      </div>
+                                   </div>
+                                    <img class="imggraph" src="img/graphtwo-removebg-preview.png" alt="" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="manager">
+                        <div class="managers-header">
+                            <h1>Managers</h1>
+                            <p>All Managers Section</p>
+                        </div>
+                        <div class="allProfile">
+                            <div class="profile">
+                                <img class="profile-img" src="img/angela.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Angela Dustin</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/comrade.jpeg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Jonathan David</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/nkiru.jpeg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Nkiru Emmaneul</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/stephen.JPG" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Stephen Gual</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/rejoicepic.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Rejoice Yahaya</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/Atikh Bana.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Atikh Bana</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/elizabeth123.JPG" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Trager Lizzy</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/Aaron McMillan.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Aaron McMillan</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/Ashleigh Axios.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Ashleigh Axios</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="staff">
+                        <div class="managers-header">
+                            <h1>All Staff</h1>
+                            <p>All Staff Section</p>
+                        </div>
+                        <div class="allProfile">
+                            <div class="profile">
+                                <img class="profile-img" src="img/my babyy.jpeg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Lois Dennis</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/De Nichols.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>De Nichols</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/Ayan-Daniels.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Ayan Daniels</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/Rachael-Hardy.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Rachael Hardy</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/zutyy.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Zuty Palema</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/debbie1.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Debbie Rasha</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/debbie2.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Racheal Gold</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/isaac.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Isaac Johnson</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/mitchigan.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Mitchell kaal</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/lois2.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Naomi Oshaha</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/auny susu.jpeg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Susan Dikachi</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/amaka.jpeg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Amaka Usedu</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/azizat.jpeg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Azizat Opeyemi</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/ibryhim.jpeg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Ibryhim Aliyu</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/kevin-hart-variety-cover-story-2.jpg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Kelvin Sapphire</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/mary.jpeg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Akpata Mary</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img class="profile-img" src="img/mitchigan.jpeg" alt="" width="50px">
+                                <div class="profile-text">
+                                    <h1>Mitchigan Jiro</h1>
+                                    <p>View profile</p>
+                                    <div class="profile-socials">
+                                        <img src="img/icons/phone.png" alt="" width="16px">
+                                        <img src="img/icons/instagram.png" alt="" width="16px">
+                                        <img src="img/icons/gmail.png" alt="" width="16px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>
+                    <section>
+        
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+    <script src="js/dashboard.js"></script>
+    <script src="js/class.js"></script>
+</body>
+</html>
+

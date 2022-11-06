@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up or Login</title>
+    <link rel="shortcut icon" href="img/favIcon.svg" type="image/x-icon">
+    <!-- Box Icon  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/signuplogin.css">
+</head>
+<body>
+    <header>
+        <div id="headerNav">
+          <!-- <h1>Miyug</h1> -->
+          <a href="index.html">
+              <img src="img/logo.svg" alt="" width="130px">
+          </a>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="nav-buttons">
+            <div href="" class="secondButtonlog buttonActive"> Login</div>
+            <div href="" class="secondButtonsign">Sign Up</div>
+          </div>
+          <i class='bx bx-menu' id="togNavIcons"></i>
+        </div>
+      </header>
+    <section class="signup_login">
+        <form action="" class="signupform formActive" >
+            <h1 class="signupheading">Sign Up</h1>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="text" name="companies" id="text" placeholder="Company Name">
+            <input type="password" name="password" id="password" placeholder="Password">
+                <div>
+                    <a class="secondButton" id="submitForm">Submit</a>
+                </div>
+        </form>
+        <form action="" class="logininform">
+            <h1 class="signupheading">Login</h1>
+            <input type="text" name="companies" id="text" placeholder="Company Name">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <!-- <div class="selection">
+                <p>Login As :</p>
+                <select name="select" id="select">
+                    <option class="option" value="ADm">Admin</option>
+                    <option class="option" value="STF">Staff</option>
+                </select>
+            </div> -->
+                <div>
+                    <a class="secondButton" id="loginToAccount">Login</a>
+                </div>
+        </form>
+    </section>
+    <footer id="footer">
+        <section class="footer-flex">
+          <div class="footerflexdivone">
+            <img src="img/logo.svg" alt="" width="150px">
+            <ul class="footerlinks">
+              <div class="footerlinkss">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+              </div>
+              <div class="footerlinkss">
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+              </div>
+            </ul>
+          </div>
+          <div class="footerflexdivtwo">
+            <div class="connect-text">
+              <h1>Connect with us</h1>
+              <!-- <p>We would loved to hear a feedback</p> -->
+            </div>
+            <form action="" id="footerForm">
+              <input type="email" name="email" id="email" placeholder="Email">
+             <button class="send">
+              <img src="img/icons/jet.png" alt="">
+             </button>
+            </form>
+          </div>
+        </section>
+        <div class="copyright">
+          <img src="img/icons/copyright.png" alt="" width="20px">
+          <p>Copyright 2022 all rights reserved</p>
+        </div>
+    </footer>
+    <script src="js/signuplogin.js"></script>
+</body>
+</html>

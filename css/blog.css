@@ -1,0 +1,146 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+*:focus-visible{
+    outline: none;
+}
+html{
+    scroll-behavior:smooth;
+}
+h1, p{
+    font-family: 'Jost', sans-serif;
+}
+body{
+    background-color: #ecf5ffb0;
+    height: 200vh;
+}
+:root{
+    --nav-color-- : #0E1E38;
+    --main-color-- : #0F223D;
+    --button-color-- : #2D8FFF;
+    --primary-color-- : rgba(255, 255, 255, 0.589);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--nav-color--); */
+    padding: 10px 0;
+    z-index: 999999999;
+    position: fixed;
+    width: 100%;
+    height:70px;
+}
+.headerScrolled{
+    background-color: var(--nav-color--);
+}
+#headerNav{
+    width: min(90%, 1060px);
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header nav ul li a{
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+.button{
+    /* background-color: var(--button-color--);
+    border: none;
+    padding: 13px 40px; */
+    color: white;
+    font-family: 'Jost', sans-serif;
+    position: relative;
+    z-index: 12;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.button::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 150%;
+    background-color: var(--button-color--);
+    z-index: -1;
+    margin-left: -20px;
+    margin-top: -6px;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+}
+.bx-menu{
+    display: none;
+    font-style: italic;
+}
+.button:hover::before{
+    width: 130%;
+}
+.secondButton{
+    background-color: var(--button-color--);
+    background: none;
+    border: 1px solid var(--button-color--);
+    padding: 7px 17px;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    box-shadow: inset 10px 0 0 0 var(--button-color--);
+}
+.secondButton:hover{
+    /* background-color: var(--button-color--); */
+    box-shadow: inset 600px 0 0 0 var(--button-color--);
+}
+.secondButtonlog{
+    background-color: var(--button-color--);
+    background: none;
+    outline: none;
+    border: none;
+    padding: 7px 17px;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    box-shadow: inset 0px 0 0 0 var(--button-color--);
+}
+.secondButtonlog:hover{
+    border: none;
+    outline: none;
+    /* background-color: var(--button-color--); */
+    box-shadow: inset 600px 0 0 0 var(--button-color--);
+}
+.navsecondButton{
+    background-color: var(--button-color--);
+    background: none;
+    outline: none;
+    border: none;
+    padding: 7px 17px;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    box-shadow: inset 600px 0 0 0 var(--button-color--);
+}
+.navsecondButton:hover{
+    opacity: 0.9;
+}
+.nav-buttons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

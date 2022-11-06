@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --nav-color-- : #0E1E38;
+    --main-color-- : #0F223D;
+    --button-color-- : #2D8FFF;
+    --primary-color-- : rgba(255, 255, 255, 0.589);
+}
+body{
+    background-color: var(--main-color--);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--nav-color--); */
+    padding: 10px 0;
+    z-index: 999999999;
+    /* margin-top: 100px; */
+    position: fixed;
+    width: 100%;
+    height:70px;
+}
+.headerScrolled{
+    background-color: var(--nav-color--);
+}
+#headerNav{
+    width: min(90%, 1060px);
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header nav ul li a{
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+.button{
+    /* background-color: var(--button-color--);
+    border: none;
+    padding: 13px 40px; */
+    color: white;
+    font-family: 'Jost', sans-serif;
+    position: relative;
+    z-index: 12;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.button::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 150%;
+    background-color: var(--button-color--);
+    z-index: -1;
+    margin-left: -20px;
+    margin-top: -6px;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+}
+.bx-menu{
+    display: none;
+    font-style: italic;
+}
+.button:hover::before{
+    width: 130%;
+}
+.secondButton{
+    background-color: var(--button-color--);
+    background: none;
+    border: 1px solid var(--button-color--);
+    padding: 7px 17px;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    box-shadow: inset 600px 0 0 0 var(--button-color--);
+}
+.secondButton:hover{
+   opacity: 0.5;
+}
+.secondButtonlog{
+    background-color: var(--button-color--);
+    background: none;
+    outline: none;
+    border: none;
+    padding: 7px 17px;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    box-shadow: inset 600px 0 0 0 var(--button-color--);
+}
+.secondButtonlog:hover{
+   opacity: 0.9;
+}
+.secondButtonsign{
+    background-color: var(--button-color--);
+    background: none;
+    outline: none;
+    border: none;
+    padding: 7px 17px;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    box-shadow: inset 600px 0 0 0 var(--button-color--);
+}
+.secondButtonsign:hover{
+    opacity: 0.9;
+}
+
+.nav-buttons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* ==================================== SIGN UP SECTION ========================= */
+
+.signup_login{
+    /* margin-top: -90px; */
+    width: 100%;
+    height: 100vh;
+    padding-top: 90px;
+    background: linear-gradient(#0e1e38c7, #0E1E38), url(../img/contact-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.signupform,.logininform{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: min(500px, 80%);
+}
+.signup_login form input{
+    width: 100%;
+    background-color: rgb(223, 231, 252);
+    border: 1px solid var(--primary-color--);
+    border-radius: 6px;
+    padding: 15px 10px;
+    color: black;
+    font-family: 'Jost', sans-serif;
+}
+.signup_login form input:focus-visible{
+    outline: none;
+}
+::placeholder{
+    color: black;
+}
+.signUptext_button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex: none;
+    justify-content: space-between;
+    padding-block: 20px;
+}
+input:-internal-autofill-selected{
+    background-color: green;
+}
+.selection{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.selection p {
+    font-family: 'Jost', sans-serif;
+    color: var(--primary-color--);
+}
+#select{
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    background: none;
+    padding: 5px;
+    font-family: 'Jost', sans-serif;
+    color: var(--primary-color--);
+}
+#select:focus-visible{
+    outline: none;
+}
+option{
+    outline: none;
+    border: none;
+    background-color: var(--main-color--);
+    color: white;
+}
+.signupheading{
+    color: white;
+    font-size: 25px;
+    padding-block: 30px;
+    letter-spacing: 2px;
+    font-family: 'Jost', sans-serif;
+}
+.logindiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.logindiv p {
+    color: var(--primary-color--);
+    font-family: 'Jost', sans-serif;
+    align-items: center;
+}
+
+.secondButtonlog{
+    display: none;
+}
+.secondButtonsign{
+    display: none;
+}
+.buttonActive{
+    display: block;
+}
+.signupform{
+    display: none;
+}
+.logininform{
+    display: none;
+}
+.formActive{
+    display: flex;
+}
+/* ============================ FOOTER ========================================================*/
+/* ================================ FOOTER ================================== */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 20px;
+    width: 100%;
+    min-height: 50vh;
+    background-color: var(--nav-color--);
+}
+.footerheading{
+    font-size: 40px;
+    color: white;
+    font-weight: 100;
+}
+.footerflexdivone{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* background-color: red; */
+    height: 100px;
+    width: 150px;
+}
+.footer-flex{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 40px;
+}
+.footerlinks{
+    display: flex;
+    justify-content: space-between;
+}
+.footerlinks li a{
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+.footerlinkss{
+   display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#footerForm{
+    /* background-color: #4CAF50; */
+    width: 100%;
+    display: flex;
+}
+#footerForm input{
+    width: 100%;
+    /* background: none; */
+    border: 1px solid var(--primary-color--);
+    /* border-radius: 6px; */
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    padding: 10px 10px;
+    font-family: 'Jost', sans-serif;
+}
+.footerflexdivtwo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    width: 40%;
+}
+.connect-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.connect-text h1{
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.connect-text p{
+    color: rgb(180, 180, 180);
+    font-weight: 100;
+}
+.send{
+    width: 50px;
+    height: 50px;
+    background-color: var(--button-color--);
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.copyright{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.copyright p{
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+
+/* ======================================= RESPONSIVENESS =============================================== */
+
+
+
+@media (max-width : 550px) {
+    nav{
+        margin-left: 600px;
+        inset: 0 0 0 45% ;
+        height: 100vh;
+        float: right;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 999999999999;
+        background-color: var(--button-color--);
+        display: flex;
+        transition-duration: 0.5s;  
+    }
+    nav.resNav{
+        box-shadow: 0px 0px 0px 1000px rgba(0, 0, 0, 0.568);
+        margin-left:0px;
+    }
+    nav ul{
+        position: absolute;
+        /* background-color: white; */
+        flex-direction: column;
+    }
+    #togNavIcons{
+        z-index: 99999999999;
+        width: 40px;
+        background: none;
+        border: none;
+    }
+    .bx-menu{
+        display: block;
+        font-size: 30px;
+        color: rgba(255, 255, 255, 0.616);
+    }
+    .bx-x{
+        font-size: 30px;
+        color: rgba(255, 255, 255, 0.616);
+    }
+    .nav-buttons{
+        display: none;
+    }
+    #landPage{
+       flex-direction: column;
+       justify-content: space-evenly;
+       gap: 50px;
+       padding-block: 70px;
+       padding-top: 100px;
+    }
+    .landform{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .landform form{
+        width: 80%;
+        height: 300px;
+        display: flex;
+    }
+    .landcontents{
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+    }
+    .resbut{
+        width: 80%;
+       
+    }
+    .landbtn{
+
+       width: 70%;
+    }
+}
+
+
+
+
+@media (max-width: 950px) {
+    .footerflexdivtwo{
+        width: 50%;
+    }
+}
+@media (max-width: 640px) {
+    .footer-flex{
+        width: 80%;
+      flex-direction: column;
+      gap: 100px;
+      padding-block-start: 20px;
+    }
+    .footerflexdivtwo{
+        width: 80%;
+    }
+    .footerlinkss{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .footerlinks{
+        gap: 20px;
+    }
+    .footerflexdivone{
+        width: 70%;
+        align-items: center;
+    }
+}
+@media (max-width: 400px) {
+    .footerflexdivtwo {
+        width: 100%;
+    }
+    .connect-text h1 {
+        color: white;
+        font-size: 23px;
+        letter-spacing: 3px;
+        font-weight: 100;
+    }
+}
+@media (max-width: 280px) {
+    .footerlinkss{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footerflexdivone {
+        width: 70%;
+        align-items: center;
+        gap: 30px;
+    }
+}
