@@ -84,7 +84,7 @@ submitbtn.addEventListener('click', function(){
         alert('Pls Input a Field')
     }
     else{
-        window.location.replace('fhttps://fintechwebsitebymitchyugan.netlify.app/dashboard.html')
+        window.location.replace('https://fintechwebsitebymitchyugan.netlify.app/dashboard.html')
     }
 })
 
