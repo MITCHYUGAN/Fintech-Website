@@ -75,5 +75,5 @@ serch.addEventListener('click', function(){
 const logOut = document.getElementById('backToLogin')
 
 logOut.addEventListener('click', function(){
-    window.location.replace('file:///C:/Users/MITCHIGAN/Documents/FINTECH%20WEBSITE/signuplogin.html')
+    window.location.replace('https://fintechwebsitebymitchyugan.netlify.app/signuplogin.html')
 })
