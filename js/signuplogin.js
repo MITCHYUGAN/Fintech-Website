@@ -69,13 +69,11 @@ const companyName = "Ardova Plc"
 const password = "ardova123"
 login.addEventListener('click', function(){
     console.log(input[4].placeholder);
-    // console.log(input[4].value);
     if(input[3].value === "" || input[4].value === ""){
         alert('Pls Input a Field')
     }
     else{
-        window.location.replace("C:/Users/HP/Documents/MITCHYUGAN/New/FINTECH WEBSITE/dashboard.html")
-        // console.log(__dirname);
+        window.location.replace("https://fintechwebsitebymitchyugan.netlify.app/dashboard.html")
     }
 })
 
@@ -85,10 +83,9 @@ submitbtn.addEventListener('click', function(){
     if(input[0].value === "" || input[1].value === "" || input[2].value === ""){
         alert('Pls Input a Field')
     }
-    else if(input[0].value === String || input[1].value === String){
-        window.location.replace('file:///C:/Users/MITCHIGAN/Documents/FINTECH%20WEBSITE/dashboard.html')
+    else{
+        window.location.replace('fhttps://fintechwebsitebymitchyugan.netlify.app/dashboard.html')
     }
-    console.log("effieg");
 })
 
 window.addEventListener('scroll', function(){
