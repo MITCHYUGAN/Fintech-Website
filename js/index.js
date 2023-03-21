@@ -20,14 +20,8 @@ tognav.addEventListener('click', () =>{
 
 const getstarted = document.getElementById('getstartedbtn')
 getstarted.addEventListener('click', function(){
-    // window.open('file:///C:/Users/MITCHIGAN/Documents/FINTECH%20WEBSITE/signuplogin.html')
-    window.open('file:///C:/Users/MITCHIGAN/Documents/FINTECH%20WEBSITE/signuplogin.html')
+    window.open('https://fintechwebsitebymitchyugan.netlify.app/signuplogin.html')
 })
-
-// const connectbtn = document.querySelector('.navsecondButton')
-// connectbtn.addEventListener('click', function(){
-//     alert("Thanks for ")
-// })
 
 // ===================================== HEADER ON SCROOL ADD BACKGROUND ==============================
 const header = document.querySelector('header')
@@ -71,10 +65,12 @@ const password = "ardova123"
 landbtnlogin.addEventListener('click', function(){
     if(input[0].value === "" || input[1].value === "" || input[2].value === ""){
         alert("Pls Input a field")
-    } else if (input[0].value === comemail || input[1].value === companyName || input[0].value === password){
-        window.open('file:///C:/Users/MITCHIGAN/Documents/FINTECH%20WEBSITE/dashboard.html')
+    } else{
+        window.open('https://fintechwebsitebymitchyugan.netlify.app/dashboard.html')
     }
 })
+
+
 
 
 // ========================================= CONNECT SEND =========================================

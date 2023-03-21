@@ -33,22 +33,6 @@ const header = document.querySelector('header')
 const navloginbtn = document.querySelector('.secondButtonlog')
 const navsignbtn = document.querySelector('.secondButtonsign')
 
-// ====================== CHANGE FORM ===================
-// loginbutton.addEventListener('click', function changeform(){
-//     console.log("mmm");
-//     signForm.classList.remove('formActive')
-//     loginForm.classList.add('formActive')
-//     navloginbtn.classList.remove('buttonActive')
-//     navsignbtn.classList.add('buttonActive')
-// })
-
-// signupbutton.addEventListener('click', function changeform2(){
-//     loginForm.classList.remove('formActive')
-//     signForm.classList.add('formActive')
-//     navsignbtn.classList.remove('buttonActive')
-//     navloginbtn.classList.add('buttonActive')
-// })
-
 navloginbtn.addEventListener('click', function(){
     console.log("removed");
     signForm.classList.remove('formActive')
@@ -64,9 +48,6 @@ navsignbtn.addEventListener('click', function(){
 })
 // ============================= LOGIN TO DASHBOARD ===========================
 const submitbtn = document.getElementById('submitForm')
-const comemail = "ardova@gmail.com"
-const companyName = "Ardova Plc"
-const password = "ardova123"
 login.addEventListener('click', function(){
     console.log(input[4].placeholder);
     if(input[3].value === "" || input[4].value === ""){
